@@ -1,0 +1,25 @@
+name:                interval
+version:             0.1
+cabal-version:       >=1.6
+build-type:          Simple
+author:              Roel van Dijk <vandijk.roel@gmail.com>
+maintainer:          Roel van Dijk <vandijk.roel@gmail.com>
+copyright:           2011 Roel van Dijk
+license:             BSD3
+license-file:        LICENSE
+category:            Math
+synopsis:            Interval arithmetic
+homepage:            http://github.com/roelvandijk/interval
+bug-reports:         https://github.com/roelvandijk/interval/issues
+
+source-repository head
+  type:     git
+  location: git://github.com/roelvandijk/interval.git
+
+library
+  hs-source-dirs: src
+  build-depends: base                 >= 3.0.3.1 && < 4.5
+               , base-unicode-symbols >= 0.2.2   && < 0.3
+               , logfloat             >= 0.12.1  && < 0.13
+  exposed-modules: Numeric.Interval
+  ghc-options: -Wall
